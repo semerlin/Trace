@@ -310,7 +310,10 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state></state>
+          <state>D:\project\Trace\platform\stm32f10x\inc</state>
+          <state>D:\project\Trace</state>
+          <state>D:\project\Trace\common</state>
+          <state>D:\project\Trace\board</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -552,7 +555,7 @@
         </option>
         <option>
           <name>AOutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.o</state>
         </option>
         <option>
           <name>AMultibyteSupport</name>
@@ -725,7 +728,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>lnk0t.icf</state>
+          <state>$TOOLKIT_DIR$\config\linker\ST\stm32f103xC.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -785,7 +788,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state></state>
+          <state>__iar_program_start</state>
         </option>
         <option>
           <name>DoFill</name>
@@ -1912,6 +1915,93 @@
       <data/>
     </settings>
   </configuration>
+  <group>
+    <name>board</name>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\dbgserial.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\dbgserial.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\pinconfig.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\pinconfig.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\stm32f10x_cfg.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\stm32f10x_it.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\board\stm32f10x_vector.c</name>
+    </file>
+  </group>
+  <group>
+    <name>common</name>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\assert.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\macros.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\types.h</name>
+    </file>
+  </group>
+  <group>
+    <name>platform</name>
+    <group>
+      <name>stm32f10x</name>
+      <group>
+        <name>inc</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_flash.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_gpio.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_it.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_map.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_rcc.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\inc\stm32f10x_usart.h</name>
+        </file>
+      </group>
+      <group>
+        <name>src</name>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\src\stm32f10x_flash.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\src\stm32f10x_gpio.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\src\stm32f10x_rcc.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\platform\stm32f10x\src\stm32f10x_usart.c</name>
+        </file>
+      </group>
+    </group>
+  </group>
+  <file>
+    <name>$PROJ_DIR$\..\..\main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\..\..\trace.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\..\..\trace.h</name>
+  </file>
 </project>
 
 
